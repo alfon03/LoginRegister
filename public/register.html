@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">ProyectoLogin</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Login.html">
+                  <span class="material-icons">account_circle</span>Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">
+                  <span class="material-icons">account_circle</span>Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  <span class="material-icons">mail</span>Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1 mt-5 p-5">
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Registro</h2>
+        <form id="register-form">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="username" class="form-label">Nombre usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Nombre"
+              />
+              <div class="invalid-feedback">
+                El nombre tiene que estar entre 3 y 25 de logintud
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+              <div class="invalid-feedback">
+                Email debe ser valido y requerido
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+              />
+              <div class="invalid-feedback">
+                La contraseña debe cumplir con los requisitos de seguridad.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="confirm-password" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirm-password"
+                placeholder="Confirm your password"
+              />
+              <div class="invalid-feedback">
+                Las contraseñas deben coincidir .
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="age" class="form-label">Edad</label>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Edad"
+                min="1"
+              />
+              <div class="invalid-feedback">Edad requerida.</div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="DateBorn" class="form-label">Fecha Nacimiento</label>
+              <input type="date" class="form-control" id="DateBorn" />
+              <div class="invalid-feedback">Fecha nacimiento requerida.</div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="postal-code" class="form-label">Codigo Postal</label>
+              <input
+                type="text"
+                class="form-control"
+                id="postal-code"
+                placeholder="Enter your postal code"
+              />
+              <div class="invalid-feedback">Codigo Postal requedido</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="province" class="form-label">Province</label>
+              <input
+                type="text"
+                class="form-control"
+                id="province"
+                placeholder="Provincia"
+              />
+              <div class="invalid-feedback">Se requiere provincia.</div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="locality" class="form-label">Localidad</label>
+              <input
+                type="text"
+                class="form-control"
+                id="locality"
+                placeholder="Localidad"
+              />
+              <div class="invalid-feedback">Se requiere localidad.</div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Registro</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="mt-5 py-3">
+      <p>&copy; 2024 ProyectoLogin</p>
+      <a href="#" class="text-light">Privacy Policy</a> |
+      <a href="#" class="text-light">Terms of Service</a>
+    </footer>
+
+    <script src="../js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
